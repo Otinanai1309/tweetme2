@@ -1,0 +1,21 @@
+Lets get started
+================
+
+The Tweets Model
+----------------
+
+.. code-block:: console
+    :emphasize-lines: 1
+
+    $ .\manage.py startapp tweets
+
+0:39:35 9. Store Data from Django Model
+---------------------------------------
+
+.. code-block:: shell
+
+    $ .\manage.py shell
+    >>> from tweets.models import Tweet
+    >>> obj = Tweet()
+    >>> obj.content = "Hello world!"
+    >>> obj.save()
